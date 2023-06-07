@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let task of tasks">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" [checked]="task.completado" (change)="marcarComoCompletado(task)">
+      <label class="form-check-label" [ngClass]="{ 'text-decoration-line-through': task.completado }">{{ task.descripcion }}</label>
+    </div>
+  </li>
+</ul>

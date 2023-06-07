@@ -1,0 +1,7 @@
+<br>
+<select class="form-select form-select-lg mb-3" [(ngModel)]="selectedFilter" (ngModelChange)="cambiarFiltro()">
+  <option value="default">Selecciona el filtro</option>
+  <option value="all">Todas las tareas</option>
+  <option value="completed">Completadas</option>
+  <option value="incomplete">No completadas</option>
+</select>
